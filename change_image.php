@@ -124,10 +124,10 @@ if(isset($URL[1]) && ($URL[1] == "profile" || $URL[1] == "cover"))
 
 		}else
 		{
-			echo "<div style='text-align:center;font-size:12px;color:white;background-color:grey;'>";
-			echo "<br>The following errors occured:<br><br>";
-			echo "please add a valid image!";
-			echo "</div>";
+			// echo "<div style='text-align:center;font-size:12px;color:white;background-color:grey;'>";
+			// echo "<br>The following errors occured:<br><br>";
+			// echo "please add a valid image!";
+			// echo "</div>";
 		}
 
 }

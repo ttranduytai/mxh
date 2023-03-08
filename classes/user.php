@@ -39,22 +39,17 @@ class User
 		}
 	}
 
-	public function get_friends($id)
-	{
+	public function get_friends($id){
+        $query = "select * from users where userid != '$id' order by rand() limit 5";
+        $DB = new Database();
+        $result = $DB->read($query);
 
-		$query = "select * from users where userid != '$id' ";
-		$DB = new Database();
-		$result = $DB->read($query);
-
-		if($result)
-		{
-			return $result;
-		}else
-		{
-
-			return false;
-		}
-	}
+        if($result){
+            return $result;
+        }else{
+            return false;
+        }
+    }
 
 
 	public function get_following($id,$type){

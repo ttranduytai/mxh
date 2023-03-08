@@ -1,5 +1,5 @@
 
-<div id="friends" style="border:1px solid gray;border-radius:5px;margin-right:5px;display: inline-block; width: 200px;background-color: #eee;">
+<div id="friends" style="border:1px solid gray;border-radius:5px;margin-right:5px;display: inline-block; width: 100%;background-color: #eee;">
 	<?php 
 
 		$image = "images/user_male.jpg";
@@ -24,7 +24,7 @@
 
 		<?php 
 
-			$online = "Last seen: <br> Unknown";
+			$online = "<br> Unknown";
 			if($FRIEND_ROW['online'] > 0){
 				$online = $FRIEND_ROW['online'];
 
@@ -34,7 +34,7 @@
 				if(($current_time - $online) < $threshold){
 					$online = "<span style='color:green;'>Online</span>";
 				}else{
-					$online = "Last seen: <br>" . Time::get_time(date("Y-m-d H:i:s",$online));
+					$online = "<br>" . Time::get_time(date("Y-m-d H:i:s",$online));
 				}
 			}
 		?>

@@ -119,7 +119,7 @@
 					echo "
 					<a href='".ROOT."edit.php?id=$COMMENT[postid]'>
 		 				Sửa
-					</a> . ";
+					</a> ";
 					echo "<a href='".ROOT."delete.php?id=$COMMENT[postid]' >
 		 				Xóa
 					</a>";

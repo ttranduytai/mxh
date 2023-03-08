@@ -25,7 +25,7 @@ session_start();
 		}else
 		{
 
-			header("Location: ".ROOT."profile");
+			header("Location: profile");
 			die;
 		}
  

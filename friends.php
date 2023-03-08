@@ -12,7 +12,7 @@ $conn = connect();
 <!DOCTYPE html>
 <html>
 <head>
-    <title>VietBook | Bạn bè</title>
+    <title>Bạn bè</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <style>
     .frame a{

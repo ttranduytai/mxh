@@ -76,11 +76,14 @@
 		
 		#blue_bar{
 
-			height: 50px;
-			background-color: #405d9b;
-			color: #d9dfeb;
-
-		}
+height: 50px;
+background-color: #405d9b;
+color: #d9dfeb;
+position:fixed;
+top:0;
+left:0;
+right:0;
+}
 
 		#search_box{
 
@@ -90,7 +93,7 @@
 			border:none;
 			padding: 4px;
 			font-size: 14px;
-			background-image: url(search.png);
+			/*background-image: url(search.png);*/
 			background-repeat: no-repeat;
 			background-position: right;
 
@@ -175,7 +178,7 @@
 
 	</style>
 
-	<body style="font-family: tahoma; background-color: #d0d8e4;">
+	<body style="font-family:nunito;background-color:#f0f2f5;margin:0">
 
 		<br>
 		<?php include("header.php"); ?>
@@ -183,7 +186,7 @@
 		<!--post area-->
 	<?php if(!($is_group_post && $group_data['group_type'] == 'private' && !group_access($_SESSION['mybook_userid'],$group_data,'member'))): ?>
 		
-		<div style="width: 800px;margin:auto;min-height: 400px;">
+		<div style="width: 1200px;margin:auto;min-height: 400px;">
 		 
 			<!--below cover area-->
 			<div style="display: flex;">	
@@ -191,7 +194,7 @@
 				<!--posts area-->
  				<div style="min-height: 400px;flex:2.5;padding: 20px;padding-right: 0px;">
  					
- 					<div style="border:solid thin #aaa; padding: 10px;background-color: white;">
+ 					<div style="margin-top:50px;border:1px solid gray;border-radius:5px;; padding: 10px;background-color: white;">
 
   					 <?php 
   					 		//check if this is from a notification
@@ -221,7 +224,7 @@
 
 						<?php if(!($is_group_post && $group_data['group_type'] == 'public' && !group_access($_SESSION['mybook_userid'],$group_data,'member'))): ?>
 
-	  					<div style="border:solid thin #aaa; padding: 10px;background-color: white;">
+	  					<div style="border:1px solid gray;border-radius:5px;; padding: 10px;background-color: white;">
 
 	 						<form method="post" enctype="multipart/form-data">
 
@@ -260,10 +263,10 @@
  						<?php if($ROW['parent'] == 0): ?>
 
 	 						<a href="<?= $pg['next_page'] ?>">
-		 					 <input id="post_button" type="button" value=">" style="float: right;width:150px;">
+		 					 <input class="chuyentrang" id="post_button" type="button" value=">" style="float: right;width:150px;">
 		 					 </a>
 		 					 <a href="<?= $pg['prev_page'] ?>">
-		 					 <input id="post_button" type="button" value="<" style="float: left;width:150px;">
+		 					 <input class="chuyentrang" id="post_button" type="button" value="<" style="float: left;width:150px;">
 		 					 </a>
 
 		 				<?php endif; ?>

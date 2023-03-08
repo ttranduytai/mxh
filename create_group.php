@@ -115,13 +115,16 @@
 			color: white;
 		}
 
-			#blue_bar{
+		#blue_bar{
 
-			height: 50px;
-			background-color: #405d9b;
-			color: #d9dfeb;
-
-		}
+height: 50px;
+background-color: #405d9b;
+color: #d9dfeb;
+position:fixed;
+top:0;
+left:0;
+right:0;
+}
 
 		#search_box{
 
@@ -131,7 +134,7 @@
 			border:none;
 			padding: 4px;
 			font-size: 14px;
-			background-image: url(search.png);
+			/*background-image: url(search.png);*/
 			background-repeat: no-repeat;
 			background-position: right;
 

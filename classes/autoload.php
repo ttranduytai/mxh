@@ -17,7 +17,7 @@
  	if(!defined("ROOT")){
 
  		//create root variable
-		$root = $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['SERVER_NAME'] . "/mxh/";
+		$root = $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['SERVER_NAME'] . "/mxh1/";
 		$root = trim(str_replace("router.php", "", $root),"/");
 
 		define("ROOT", $root . "/");

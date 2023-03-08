@@ -41,7 +41,7 @@
  				<div style="min-height: 400px;flex:2.5;padding: 20px;padding-right: 0px;">
  					
  					<?php if(!($group_data['group_type'] == 'public' && !group_access($_SESSION['mybook_userid'],$group_data,'member'))): ?>
- 					<div style="border:solid thin #aaa; padding: 10px;background-color: white;">
+ 					<div style="margin-top:50px;border:1px solid gray;border-radius:5px;; padding: 10px;background-color: white;">
 
  						<form method="post" enctype="multipart/form-data">
 
@@ -76,10 +76,10 @@
 	 					 ?>
   	 					
   	 					<a href="<?= $pg['next_page'] ?>">
-	 					 <input id="post_button" type="button" value=">" style="float: right;width:150px;">
+	 					 <input class="chuyentrang" id="post_button" type="button" value=">" style="float: right;width:150px;">
 	 					 </a>
 	 					 <a href="<?= $pg['prev_page'] ?>">
-	 					 <input id="post_button" type="button" value="<" style="float: left;width:150px;">
+	 					 <input class="chuyentrang" id="post_button" type="button" value="<" style="float: left;width:150px;">
 	 					 </a>
 	 				</div>
 

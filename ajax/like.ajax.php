@@ -99,9 +99,9 @@ $_GET['type'] = addslashes($_GET['type']);
 			 		if($like_count == 1){
 
 			 			if($i_liked){
-			 				$info .= "<div style='text-align:left;'>You liked this post </div>";
+			 				$info .= "<div style='text-align:left;'>Bạn thích bài này </div>";
 			 			}else{
-			 				$info .= "<div style='text-align:left;'> 1 person liked this post </div>";
+			 				$info .= "<div style='text-align:left;'> 1 người khác thích bài này </div>";
 			 			}
 			 		}else{
 
@@ -111,9 +111,9 @@ $_GET['type'] = addslashes($_GET['type']);
 			 				if($like_count - 1 == 1){
 			 					$text = "other";
 			 				}
-			 				$info .= "<div style='text-align:left;'> You and " . ($like_count - 1) . " $text liked this post </div>";
+			 				$info .= "<div style='text-align:left;'> You and " . ($like_count - 1) . " $text thích bài này </div>";
 			 			}else{
-			 				$info .= "<div style='text-align:left;'>" . $like_count . " other liked this post </div>";
+			 				$info .= "<div style='text-align:left;'>" . $like_count . " thích bài này </div>";
 			 			}
 			 		}
 

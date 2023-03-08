@@ -25,7 +25,7 @@
 		}else
 		{
 
-			header("Location:" . ROOT ."login");
+			header("Location:login");
 			die;
 		}
  
@@ -114,8 +114,8 @@
 				<select class="fill" id="text" name="gender">
 					
 					<option><?php echo $gender ?></option>
-					<option>Nam</option>
-					<option>Nữ</option>
+					<option>Male</option>
+					<option>Female</option>
 
 				</select>
 				<br><br>

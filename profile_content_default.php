@@ -3,9 +3,9 @@
 				<!--friends area-->			
 				<div style="min-height: 400px;flex:1;">
 					
-					<div style="border:1px solid gray;border-radius:5px;padding:5px" id="friends_bar">
+					<div style="border:1px solid gray;border-radius:5px;padding:10px" id="friends_bar">
 						
-						Đang theo dõi<br>
+						<span style="color:black">Đang theo dõi</span><br>
  
  						<?php 
 
@@ -24,7 +24,20 @@
 	 					 ?>
 
 					</div>
+					<div style="margin-top:10px">
+            <div style="border:1px solid gray;border-radius:5px;padding:10px" id="friends_bar">
+                <span style="color:black">Gợi ý theo dõi</span><br>
+                <?php
+                    if($suggest_friends){
+                        foreach($suggest_friends as $FRIEND_ROW){
+                            
 
+                            include("user.php");
+                        }
+                    }
+                ?>
+            </div>
+        </div>
 				</div>
 
 				<!--posts area-->
@@ -65,10 +78,10 @@
 	 					 ?>
   	 					<div>
   	 					<a href="<?= $pg['next_page'] ?>">
-	 					 <input id="post_button" type="button" value=">" style="float: right;width:150px;">
+	 					 <input class="chuyentrang" id="post_button" type="button" value=">" style="float: right;width:150px;">
 	 					 </a>
 	 					 <a href="<?= $pg['prev_page'] ?>">
-	 					 <input id="post_button" type="button" value="<" style="float: left;width:150px;">
+	 					 <input class="chuyentrang" id="post_button" type="button" value="<" style="float: left;width:150px;">
 	 					 </a>
 						</div>
 	 				</div>

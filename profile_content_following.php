@@ -1,5 +1,5 @@
 <div style="min-height: 400px;width:100%;background-color: white;text-align: center;">
-	<div style="display:flex;padding: 20px;">
+	<div style="display:flex;padding: 20px;width:200px;margin:0 auto">
 	<?php
  
 		$image_class = new Image();
@@ -18,7 +18,7 @@
 
 		}else{
 
-			echo "This user inst following anyone!";
+			echo "Bạn chưa theo dõi ai cả.";
 		}
 
 

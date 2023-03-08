@@ -58,6 +58,7 @@
 			background-color: #405d9b;
 			color: #d9dfeb;
 			position:fixed;
+			top:0;
 			left:0;
 			right:0;
 		}
@@ -70,7 +71,7 @@
 			border:none;
 			padding: 4px;
 			font-size: 14px;
-			/* background-image: url(search.png);
+			/* /*background-image: url(search.png);*/
 			background-repeat: no-repeat;
 			background-position: right; */
 
@@ -165,7 +166,7 @@
 		<?php include("header.php"); ?>
 
 		<!--cover area-->
-		<div style="width: 800px;margin:auto;min-height: 400px;">
+		<div style="width: 1200px;margin:auto;min-height: 400px;">
 			
 			 
 			<!--below cover area-->
@@ -264,10 +265,10 @@
  
 	 					 ?>
 	 					 <a href="<?= $pg['next_page'] ?>">
-	 					 <input id="post_button" type="button" value=">" style="float: right;width:150px;">
+	 					 <input class="chuyentrang" id="post_button" type="button" value=">" style="float: right;width:150px;">
 	 					 </a>
 	 					 <a href="<?= $pg['prev_page'] ?>">
-	 					 <input id="post_button" type="button" value="<" style="float: left;width:150px;">
+	 					 <input class="chuyentrang" id="post_button" type="button" value="<" style="float: left;width:150px;">
 	 					 </a>
 	 				</div>
 

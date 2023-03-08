@@ -25,11 +25,11 @@
 					echo "<input type='password' id='textbox' name='password'  value='".htmlspecialchars($settings['password'])."' placeholder='Password'/>";
 					echo "<input type='password' id='textbox' name='password2'  value='".htmlspecialchars($settings['password'])."' placeholder='Password'/>";
 					
-					echo "<br>About me:<br>
+					echo "<br>Tiểu sử:<br>
 							<textarea id='textbox' style='height:200px;' name='about'>".htmlspecialchars($settings['about'])."</textarea>
 						";
 
-					echo '<input id="post_button" type="submit" value="Save">';
+					echo '<input id="post_button" type="submit" value="Lưu">';
 				}
 				
 			?>

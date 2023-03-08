@@ -24,17 +24,17 @@ Class Time {
 			
 			if ($answerY >= 1) {//one year has passed
 			
-				$answerY = date(" F jS, Y ",strtotime($pasttime));// . " at " . date("h:i:s a", strtotime($pasttime));
+				$answerY = date(" d.m.Y ",strtotime($pasttime));// . " at " . date("h:i:s a", strtotime($pasttime));
 				return $answerY;
  				
 			}else if ($answerM >= 1) {//one month has passed
 			
-				$answerM = date(" F jS, Y ",strtotime($pasttime));// . " at " . date("h:i:s a", strtotime($pasttime));
+				$answerM = date(" d.m.Y ",strtotime($pasttime));// . " at " . date("h:i:s a", strtotime($pasttime));
 				return $answerM;
 			
 			}else if ($answer > 2) { //more than 2 days
  				
-				$answer = date(" F jS, Y ",strtotime($pasttime));// . " at " . date("h:i:s a", strtotime($pasttime));
+				$answer = date(" d.m.Y ",strtotime($pasttime));// . " at " . date("h:i:s a", strtotime($pasttime));
 				return $answer;
 				
 			}else if ($answer == 2) { // 2 days

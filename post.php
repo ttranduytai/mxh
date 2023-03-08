@@ -150,7 +150,7 @@
                 echo "
 					<a href='".ROOT."edit.php?id=$ROW[postid]'>
 		 				Sửa
-					</a> .
+					</a>
 
 					 <a href='".ROOT."delete.php?id=$ROW[postid]' >
 		 				Xóa
@@ -192,9 +192,9 @@
 			 		if($ROW['likes'] == 1){
 
 			 			if($i_liked){
-			 				echo "<div style='text-align:left;'>You liked this post </div>";
+			 				echo "<div style='text-align:left;'>Bạn thích bài này </div>";
 			 			}else{
-			 				echo "<div style='text-align:left;'> 1 person liked this post </div>";
+			 				echo "<div style='text-align:left;'> 1 người khác thích bài này </div>";
 			 			}
 			 		}else{
 
@@ -204,9 +204,9 @@
 			 				if($ROW['likes'] - 1 == 1){
 			 					$text = "other";
 			 				}
-			 				echo "<div style='text-align:left;'> You and " . ($ROW['likes'] - 1) . " $text liked this post </div>";
+			 				echo "<div style='text-align:left;'> You and " . ($ROW['likes'] - 1) . " $text thích bài này </div>";
 			 			}else{
-			 				echo "<div style='text-align:left;'>" . $ROW['likes'] . " other liked this post </div>";
+			 				echo "<div style='text-align:left;'>" . $ROW['likes'] . " thích bài này </div>";
 			 			}
 			 		}
 
@@ -252,7 +252,7 @@
 					var likes = "";
 
 					if(typeof obj.likes != 'undefined'){
-						likes = (parseInt(obj.likes) > 0) ? "Like(" +obj.likes+ ")" : "Like" ;
+						likes = (parseInt(obj.likes) > 0) ? "Thích(" +obj.likes+ ")" : "Thích" ;
 						element.innerHTML = likes;
 					}
 

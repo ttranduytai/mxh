@@ -11,7 +11,7 @@
 
 				if(is_array($settings)){
 
-					echo "<input type='text' id='textbox' name='first_name' value='".htmlspecialchars($settings['first_name'])."' placeholder='Group name' />";
+					echo "<input type='text' id='textbox' name='first_name' value='".htmlspecialchars($settings['first_name'])."' placeholder='Tên nhóm' />";
  
 					echo "<select id='textbox' name='group_type' style='height:30px;width:104%;'>
 
@@ -20,11 +20,11 @@
 							<option>Private</option>
 						</select>";
 
- 					echo "<br>About me:<br>
+ 					echo "<br>Tiểu sử:<br>
 							<textarea id='textbox' style='height:200px;' name='about'>".htmlspecialchars($settings['about'])."</textarea>
 						";
 
-					echo '<input id="post_button" type="submit" value="Save">';
+					echo '<input id="post_button" type="submit" value="Lưu">';
 				}
 				
 			?>

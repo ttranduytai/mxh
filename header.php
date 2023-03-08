@@ -17,10 +17,10 @@
 		}
 	}
 ?>
-
+<style>a{text-decoration: none;}a:hover{text-decoration: underline;}.chuyentrang{background-color: white!important;border: 1px solid black!important;color: black!important;font-size: 17px!important;border-radius: 10px!important;}</style>
 <div id="blue_bar" style="display:flex;justify-content:center;align-items:center">
 	<form method="get" action="search">
-		<div style="width: 800px;margin:auto;font-size: 30px;">
+		<div style="margin:auto;font-size: 30px;">
 			
 			<a href="<?=ROOT?>home" style="text-decoration:none;color: white;">MXH</a> 
 			<input type="text" id="search_box" name="find" placeholder="Tìm kiếm trên MXH" />

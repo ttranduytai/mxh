@@ -61,7 +61,7 @@
 
 	//collect friends
 	$user = new User();
- 	
+	$suggest_friends = $user->get_friends($id);
 	$friends = $user->get_following($user_data['userid'],"user");
 
 	$image_class = new Image();
@@ -76,20 +76,21 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-		<title>Trang cá nhân</title>
+		<title>MXH</title>
 	</head>
 
 	<style type="text/css">
 		
 		#blue_bar{
 
-			height: 50px;
-			background-color: #405d9b;
-			color: #d9dfeb;
-			position:fixed;
-			left:0;
-			right:0;
-		}
+height: 50px;
+background-color: #405d9b;
+color: #d9dfeb;
+position:fixed;
+top:0;
+left:0;
+right:0;
+}
 
 		#search_box{
 
@@ -99,9 +100,9 @@
 			border:none;
 			padding: 4px;
 			font-size: 14px;
-			/* background-image: url(search.png);
+			/*background-image: url(search.png);*/
 			background-repeat: no-repeat;
-			background-position: right; */
+			background-position: right;
 
 		}
 
@@ -135,16 +136,16 @@
 
 		#friends_img{
 
-			width: 75px;
+			width: 50px;
 			float: left;
-			margin:8px;
-
+			margin:10px;
+			border-radius:100%
 		}
 
 		#friends_bar{
 
 			background-color: white;
-			min-height: 400px;
+			/* min-height: 400px; */
 			margin-top: 20px;
 			color: #aaa;
 			padding: 8px;
@@ -214,7 +215,8 @@
 	 					<div style="border:solid thin #aaa; padding: 10px;background-color: white;">
 
 	 						<input type="file" name="file"><br>
-	 						<input id="post_button" type="submit" style="width:120px;" value="Change">
+							<button onclick="hide_change_profile_image()">Đóng</button>
+	 						<input id="post_button" type="submit" style="width:120px;" value="Lưu thay đổi">
 	 						<br>
 							<div style="text-align: center;">
 								<br><br>
@@ -238,7 +240,8 @@
 	 					<div style="border:solid thin #aaa; padding: 10px;background-color: white;">
 
 	 						<input type="file" name="file"><br>
-	 						<input id="post_button" type="submit" style="width:120px;" value="Change">
+							<button onclick="hide_change_cover_image()">Đóng</button>
+	 						<input id="post_button" type="submit" style="width:120px;" value="Lưu thay đổi">
 	 						<br>
 							<div style="text-align: center;">
 								<br><br>
@@ -255,7 +258,7 @@
  		</div>
 
 		<!--cover area-->
-		<div style="width: 800px;margin:auto;min-height: 400px;">
+		<div style="width: 1200px;margin:auto;min-height: 400px;">
 			
 			<div style="background-color: white;text-align: center;color: #405d9b">
 
@@ -268,7 +271,7 @@
 						}
 					?>
 
-				<img style="margin-top:50px;width:-webkit-fill-available" src="<?php echo ROOT . $image ?>" style="width:100%;">
+				<img style="margin-top:50px;width:-webkit-fill-available;height:300px;" src="<?php echo ROOT . $image ?>" style="width:100%;">
 
 
 				<span style="font-size: 12px;">
